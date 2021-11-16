@@ -6,7 +6,7 @@
 
     <LinearLayout
         android:layout_width="200dp"
-        android:layout_height="150dp"
+        android:layout_height="100dp"
         android:orientation="vertical">
 
         <LinearLayout
@@ -20,7 +20,8 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:width="100dp"
-                android:text="Latitud: " />
+                android:text="Latitud: "
+                android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/txtLatitud"
@@ -40,7 +41,8 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:width="100dp"
-                android:text="Longitud: " />
+                android:text="Longitud: "
+                android:textStyle="bold"/>
             <TextView
                 android:id="@+id/txtLongitud"
                 android:layout_width="wrap_content"
@@ -59,7 +61,8 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:width="100dp"
-                android:text="Presion: " />
+                android:text="Presion: "
+                android:textStyle="bold"/>
             <TextView
                 android:id="@+id/txtPresion"
                 android:layout_width="wrap_content"
@@ -68,9 +71,10 @@
         </LinearLayout>
 
     </LinearLayout>
+
     <LinearLayout
-        android:layout_width="200dp"
-        android:layout_height="150dp"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
         android:orientation="vertical">
 
         <LinearLayout
@@ -84,7 +88,9 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:width="100dp"
-                android:text="Humedad: " />
+                android:text="Humedad: "
+                android:textStyle="bold" />
+
             <TextView
                 android:id="@+id/txtHumedad"
                 android:layout_width="wrap_content"
@@ -103,7 +109,9 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:width="100dp"
-                android:text="Temperatura: " />
+                android:text="Temperatura: "
+                android:textStyle="bold" />
+
             <TextView
                 android:id="@+id/txtTemperatura"
                 android:layout_width="wrap_content"
@@ -122,7 +130,9 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:width="100dp"
-                android:text="Coordenadas: " />
+                android:text="Coordenadas: "
+                android:textStyle="bold" />
+
             <TextView
                 android:id="@+id/txtCoordenadas"
                 android:layout_width="wrap_content"
