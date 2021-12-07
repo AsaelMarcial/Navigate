@@ -13,7 +13,7 @@ data class Informacion(
     val temperatura: String,
     val coordenadas: String,
     val giroscopio: String,
-    val fecha: String
-
+    val fecha: String,
+    val dt_created: String
 
 )

@@ -19,15 +19,17 @@ class InformacionAdapter(private val context: Activity, internal var datas: List
         val txtHumedad = listViewItem.findViewById(R.id.txtHumedad) as TextView
         val txtTemperatura = listViewItem.findViewById(R.id.txtTemperatura) as TextView
         val txtCoordenadas = listViewItem.findViewById(R.id.txtCoordenadas) as TextView
+        val txtFecha = listViewItem.findViewById(R.id.txtFecha) as TextView
 
 
         val data = datas[position]
         txtlatitud.text = data.latitud
         txtlongitud.text = data.longitud
-        txtPresion.text = data.presion
-        txtHumedad.text = data.humedad
-        txtTemperatura.text = data.temperatura
+        txtPresion.text = data.presion + "mb"
+        txtHumedad.text = data.humedad + "%"
+        txtTemperatura.text = data.temperatura + "°C"
         txtCoordenadas.text = data.coordenadas
+        txtFecha.text = data.dt_created + " UTC"
 
         return listViewItem
     }

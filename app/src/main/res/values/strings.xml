@@ -1,3 +1,5 @@
 <resources>
-    <string name="app_name">Navigate</string>
+    <string name="app_name">Monitoreo de Pequeñas Embarcaciones</string>
+    <string name="title_activity_maps">Ubicación seleccionada</string>
+    <string name="menu_refresh">Actualizar</string>
 </resources>
