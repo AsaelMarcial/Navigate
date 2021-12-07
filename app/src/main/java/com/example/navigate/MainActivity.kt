@@ -28,13 +28,13 @@ class MainActivity : AppCompatActivity() {
         val swipe = findViewById<SwipeRefreshLayout>(R.id.swipe)
         listView = findViewById(R.id.listViewData) as ListView
         infoList = mutableListOf<Informacion>()
-        loadArtists()
+        loadInfo()
 
         swipe.setOnRefreshListener {
             infoList!!.clear()
             val adapter = InformacionAdapter(this@MainActivity, infoList!!)
             listView!!.adapter = adapter
-            loadArtists()
+            loadInfo()
             swipe.isRefreshing = false
         }
 
@@ -42,7 +42,7 @@ class MainActivity : AppCompatActivity() {
 
     }
 
-    private fun loadArtists() {
+    private fun loadInfo() {
         val stringRequest = StringRequest(Request.Method.GET,
             "https://targetgsm.000webhostapp.com/v1/?op=getdata",
             { s ->
